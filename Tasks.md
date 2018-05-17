@@ -7,13 +7,13 @@
 - [ ] UI-Design
 
 ## Spanner:
-- [ ] UseCase-Diagramme
+- [x] UseCase-Diagramme
 
 ## Max:
 - [ ] UI-Design
 
 ## Jerin:
-- [ ] UseCase-Diagramme
+- [x] UseCase-Diagramme
 
 ## Alex:
 - [ ] UML-Diagramm
