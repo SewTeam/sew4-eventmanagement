@@ -45,3 +45,7 @@ Beachten Sie bei der Implementierung, dass die Kommentare in derselben Reihenfol
 Sie müssen sich auch Gedanken über die Persistenz der Informationen machen. Wenn die Serverinstanz herunterfährt, muss der gesamte Inhalt dauerhaft abgelegt worden sein.
 
 Es reicht ein einfaches, aber funktionales GUI. Sie müssen dafür ein entsprechendes Framework einsetzen.
+
+## UML
+
+![UML-Diagramm v1](assets/uml_mk1.PNG)
