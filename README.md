@@ -54,12 +54,11 @@ Es reicht ein einfaches, aber funktionales GUI. Sie müssen dafür ein entsprech
 ![Link](https://docs.google.com/spreadsheets/d/1VuHBhLw7mpj48xmvvhskgoZgbZvOAz7b3KvANuBB0MI/edit?usp=sharing)
 
 ## Git Usage
-'''bash
+```bash
 git pull
 work...
 git add .
 git commit -am "commit message"
 git pull
 git push
-
-'''
+```
