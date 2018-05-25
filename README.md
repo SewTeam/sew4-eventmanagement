@@ -51,7 +51,7 @@ Es reicht ein einfaches, aber funktionales GUI. Sie müssen dafür ein entsprech
 ![UML-Diagramm v1](assets/uml_mk1.PNG)
 
 ## Zeitaufzeichnung 
-![Link](https://docs.google.com/spreadsheets/d/1VuHBhLw7mpj48xmvvhskgoZgbZvOAz7b3KvANuBB0MI/edit?usp=sharing)
+[Link](https://docs.google.com/spreadsheets/d/1VuHBhLw7mpj48xmvvhskgoZgbZvOAz7b3KvANuBB0MI/edit#gid=17)
 
 ## Git Usage
 ```bash
