@@ -1,7 +1,8 @@
 # Aufgabenbereiche
 
 ## Daniel:
-- [ ] UML-Diagramm
+- [X] UML-Diagramm
+- [ ] Klassen laut UML erstellen
 
 ## Yasin:
 - [ ] UI-Design
@@ -14,6 +15,8 @@
 
 ## Jerin:
 - [x] UseCase-Diagramme
+- [X] PostregSQL Server aufsetzen
+- [ ] Create Script schreiben
 
 ## Alex:
 - [ ] UML-Diagramm
