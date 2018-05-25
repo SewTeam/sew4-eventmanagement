@@ -3,6 +3,7 @@
 ## Daniel:
 - [X] UML-Diagramm
 - [ ] Klassen laut UML erstellen
+- [ ] Zeitaufzeichnung aktualisieren
 
 ## Yasin:
 - [ ] UI-Design
