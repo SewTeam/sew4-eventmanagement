@@ -36,7 +36,8 @@
             </constraints>
             <properties>
               <font name="Verdana" size="16" style="1"/>
-              <text value="Choose Date"/>
+              <foreground color="-1"/>
+              <text value="Choose Something"/>
             </properties>
           </component>
           <component id="9cc9e" class="javax.swing.JCheckBox" binding="checkBox1" default-binding="true">
@@ -44,7 +45,9 @@
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Date1"/>
+              <background color="-5952982"/>
+              <foreground color="-1"/>
+              <text value="Choose 1"/>
             </properties>
           </component>
           <component id="830bf" class="javax.swing.JCheckBox" binding="checkBox2" default-binding="true">
@@ -52,7 +55,9 @@
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Date2"/>
+              <background color="-5952982"/>
+              <foreground color="-1"/>
+              <text value="Choose 2"/>
             </properties>
           </component>
           <component id="46c04" class="javax.swing.JCheckBox" binding="checkBox3" default-binding="true">
@@ -60,7 +65,9 @@
               <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Date3"/>
+              <background color="-5952982"/>
+              <foreground color="-1"/>
+              <text value="Choose 3"/>
             </properties>
           </component>
           <component id="b479f" class="javax.swing.JLabel">
@@ -69,6 +76,7 @@
             </constraints>
             <properties>
               <font name="Verdana" size="16" style="1"/>
+              <foreground color="-1"/>
               <text value="Comments"/>
             </properties>
           </component>
@@ -77,7 +85,9 @@
               <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="Date4"/>
+              <background color="-5952982"/>
+              <foreground color="-1"/>
+              <text value="Choose 4"/>
             </properties>
           </component>
           <component id="21262" class="javax.swing.JTextPane" binding="textPane1" default-binding="true">
@@ -86,7 +96,9 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-4144960"/>
+            </properties>
           </component>
           <component id="59ad9" class="javax.swing.JTextField" binding="textField1" default-binding="true">
             <constraints>
@@ -94,13 +106,17 @@
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-4144960"/>
+            </properties>
           </component>
           <component id="85bd2" class="javax.swing.JButton" binding="button1" default-binding="true">
             <constraints>
               <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
+              <background color="-4144960"/>
+              <foreground color="-1"/>
               <text value="Send"/>
             </properties>
           </component>
