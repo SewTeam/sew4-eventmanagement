@@ -32,11 +32,11 @@
 
             function addOptionField() {
                 var tempId = makeid();
-                $("#voteables").append("<div id='" + tempId + "'<br><input type='text' placeholder='Option'><i class='fa fa-times-circle' onclick='remove($(\'#" + tempId + "\'))'></i>");
+                $("#voteables").append("<div id='" + tempId + "' class='option'><br><input type='text' placeholder='Option'><i class='fa fa-times-circle' onclick='remove($(this))'></i></div>");
             }
 
             function remove($option) {
-                alert($option.attr(id));
+                $option.closest('.option').remove();
             }
         </script>
 
