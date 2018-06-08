@@ -13,7 +13,7 @@ if(isset($_GET['login'])) {
     //Überprüfung des Passworts
     if ($user !== false && password_verify($passwort, $user['passwort'])) {
         $_SESSION['userid'] = $user['id'];
-        header("Location:myevents/Events.php");
+        header("Location:myevents/index.php");
     } else {
         $errorMessage = "E-Mail oder Passwort war ungültig<br>";
     }
@@ -43,10 +43,10 @@ if(isset($errorMessage)) {
     <input type="email" size="40" maxlength="250" name="email"><br><br>
 
     Dein Passwort:<br>
-    <input type="password" size="40"  maxlength="250" name="passwort"><br>
+    <input type="password" size="40"  maxlength="250" name="passwort"><br><br>
 
     <input type="submit" value="Abschicken">
-    <a href="Registrierung/registrieren.php">Registrieren</a>
+    <a href="registrieren/index.php">Registrieren</a>
   <div>
 </div>
   </form>

@@ -1,7 +1,9 @@
 <?php
+session_start();
+$userid = $_SESSION["userid"];
+
 $pdo = new PDO('mysql:host=skanda.at;dbname=ni1504185_1sql1', 'ni1504185_1sql1', '1234');
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
-
 
 ?>
 
@@ -15,7 +17,13 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
   </head>
   <body>
     <div class="center">
-    <h1>Meine Events</h1>
+      <div class="text-center">
+        <h1>Meine Votings</h1>
+      </div>
+    <div class="center">
+      <a href="../createevent/index.php">neues Voting erstellen</a><br>
+      <a href="index.php">Alle Votings</a>
+    </div>
       <table class="table">
         <thead>
           <tr>
@@ -26,11 +34,11 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
         </thead>
         <tbody>
           <?php
-          $result = $pdo->query("SELECT title, description, creatorId FROM votings");
+          $result = $pdo->query("SELECT title, description, creatorId, id FROM votings WHERE creatorId = $userid");
           while($row = $result->fetch()){
             $emailResult = $pdo->query("SELECT vorname FROM users WHERE id = $row[2]");
             $email = $emailResult->fetch();
-            echo '<tr><td>'.$row[0].'</td>';
+            echo '<tr><td><a href="../event/event.php?id='.$row[3].'">'.$row[0].'</a></td>';
   			    echo '<td>'.$row[1].'</td>';
   			    echo '<td>'.$email["vorname"].'</td>';
           	echo '</tr>';

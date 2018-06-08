@@ -78,7 +78,7 @@ if($showFormular) {
     Nachname:<br>
     <input type="text" size="40"  maxlength="250" name="nachname"><br><br>
     Dein Passwort:<br>
-    <input type="password" size="40"  maxlength="250" name="passwort"><br>
+    <input type="password" size="40"  maxlength="250" name="passwort"><br><br>
     Passwort wiederholen:<br>
     <input type="password" size="40" maxlength="250" name="passwort2"><br><br>
     <input type="submit" value="Abschicken">
