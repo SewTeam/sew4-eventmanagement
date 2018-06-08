@@ -54,7 +54,7 @@ if(isset($_GET['register'])) {
         $result = $statement->execute(array('email' => $email, 'passwort' => $passwort_hash, 'vorname' => $vn, 'nachname' => $nn));
 
         if($result) {
-            echo 'Du wurdest erfolgreich registriert. <a href="login.php">Zum Login</a>';
+            header("Location:../index.php");
             $showFormular = false;
         } else {
             echo 'Beim Abspeichern ist leider ein Fehler aufgetreten<br>';
@@ -79,10 +79,8 @@ if($showFormular) {
     <input type="text" size="40"  maxlength="250" name="nachname"><br><br>
     Dein Passwort:<br>
     <input type="password" size="40"  maxlength="250" name="passwort"><br>
-
     Passwort wiederholen:<br>
     <input type="password" size="40" maxlength="250" name="passwort2"><br><br>
-
     <input type="submit" value="Abschicken">
     <a href="../index.php">Login</a>
     </form>
