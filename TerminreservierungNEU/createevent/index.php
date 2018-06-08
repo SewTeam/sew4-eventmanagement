@@ -32,12 +32,18 @@
 
             function addOptionField() {
                 var tempId = makeid();
-                $("#voteables").append("<div id='" + tempId + "' class='option'><br><input type='text' placeholder='Option'><i class='fa fa-times-circle' onclick='remove($(this))'></i></div>");
+                $("#voteables").append("<div id='" + tempId + "' class='option'><br><input type='text' placeholder='Option' name='" + tempId + "'><i class='fa fa-times-circle' onclick='remove($(this))'></i></div>");
             }
 
             function remove($option) {
                 $option.closest('.option').remove();
             }
+
+            $(function() {
+                $("#votingForm").ajaxForm(function(){
+                    alert("Das Voting wurde erstellt.");
+                });
+            });
         </script>
 
     </head>
@@ -47,13 +53,15 @@
                 <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12 text-center">
                     <h1>Neues Voting erstellen</h1>
                     <hr>
-                    <input type="text" id="name" placeholder="Titel"><br>
-                    <textarea id="desc" placeholder="Beschreibung"></textarea>
-                    <div id="voteables">
-                        <input type="text" placeholder="Option">
-                    </div>
-                    <i class="fa fa-plus-circle" onclick="addOptionField()"></i><br>
-                    <button>Voting erstellen</button>
+                    <form id="votingForm" method="post" action="save.php">
+                        <input type="text" id="name" placeholder="Titel" name="titel"><br>
+                        <textarea id="desc" placeholder="Beschreibung" name="desc"></textarea>
+                        <div id="voteables">
+                            <input type="text" placeholder="Option" name="o1">
+                        </div>
+                        <i class="fa fa-plus-circle" onclick="addOptionField()"></i><br>
+                        <button type="submit">Voting erstellen</button>
+                    </form>
                 </div>
             </div>
         </div>
